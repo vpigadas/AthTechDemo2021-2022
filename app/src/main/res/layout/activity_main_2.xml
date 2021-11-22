@@ -6,6 +6,7 @@
     android:padding="16dp">
 
     <ImageView
+        android:id="@+id/main_img_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
@@ -14,20 +15,22 @@
         android:src="@drawable/ic_round_arrow_back_24" />
 
     <TextView
+        android:id="@+id/main_txt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="Login to your account"
-        android:textColor="#35383c" />
+        android:text="Login to your account" />
 
     <EditText
+        android:id="@+id/main_edit_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:hint="@string/edit_email_hint" />
 
     <EditText
+        android:id="@+id/main_edit_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -35,6 +38,7 @@
         android:text="Vassilis" />
 
     <Button
+        android:id="@+id/main_btn_login"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:backgroundTint="#c83321"
@@ -42,6 +46,7 @@
         android:textAllCaps="false" />
 
     <TextView
+        android:id="@+id/main_txt_forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -54,4 +59,9 @@
         android:paddingBottom="8dp"
         android:text="Forgot your password?"
         android:textColor="#c83321" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

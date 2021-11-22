@@ -2,4 +2,6 @@
     <string name="app_name" translatable="false">AthTech Demo App</string>
     <string name="name" translatable="false">Vassilis Pigadas</string>
     <string name="edit_email_hint">Email address...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
