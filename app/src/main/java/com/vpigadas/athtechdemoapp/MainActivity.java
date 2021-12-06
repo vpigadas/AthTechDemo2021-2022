@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
@@ -26,9 +27,18 @@ public class MainActivity extends AbstractActivity {
             public void onClick(View v) {
 //                //Snackbar.make(v,"Button Clicked", Snackbar.LENGTH_SHORT).show();
 //                Toast.makeText(v.getContext(),"Button CLicked",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-                intent.putExtra("name","Vassilis");
-                startActivityForResult(intent,2000);
+
+                EditText editText = findViewById(R.id.main_edit_username);
+                String inputFromUsername = editText.getText().toString();
+                if(inputFromUsername.length() > 1){
+                    Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                    intent.putExtra("name",inputFromUsername);
+                    startActivityForResult(intent,2000);
+                }else {
+                    Snackbar.make(v,"Please insert your email", Snackbar.LENGTH_SHORT).show();
+                }
+
+
             }
         });
         btnLogin.setOnLongClickListener(new View.OnLongClickListener() {
