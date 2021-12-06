@@ -21,6 +21,10 @@ public class MainActivity extends AbstractActivity {
 
     @Override
     void uiSetup() {
+
+        ImageView imageView = findViewById(R.id.main_img_back);
+        imageView.setImageResource(R.drawable.googlelogo_color_160x56dp);
+
         Button btnLogin = findViewById(R.id.main_btn_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +48,7 @@ public class MainActivity extends AbstractActivity {
         btnLogin.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                String message = getString(R.string.snackbar_message);
                 Snackbar.make(v,"Button Long Clicked", Snackbar.LENGTH_SHORT).show();
                 return true;
             }
