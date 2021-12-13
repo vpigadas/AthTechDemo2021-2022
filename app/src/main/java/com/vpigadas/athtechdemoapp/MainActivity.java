@@ -15,12 +15,12 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AbstractActivity {
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.activity_main_2;
     }
 
     @Override
-    void uiSetup() {
+    public void uiSetup() {
 
         ImageView imageView = findViewById(R.id.main_img_back);
         imageView.setImageResource(R.drawable.googlelogo_color_160x56dp);
@@ -64,12 +64,12 @@ public class MainActivity extends AbstractActivity {
     }
 
     @Override
-    void startOperations() {
+    public void startOperations() {
 
     }
 
     @Override
-    void stopOperations() {
+    public void stopOperations() {
 
     }
 

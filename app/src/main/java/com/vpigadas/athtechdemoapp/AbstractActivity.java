@@ -6,13 +6,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class AbstractActivity extends AppCompatActivity {
-    abstract int getLayout();
+    public abstract int getLayout();
 
-    abstract void uiSetup();
+    public abstract void uiSetup();
 
-    abstract void startOperations();
+    public abstract void startOperations();
 
-    abstract void stopOperations();
+    public abstract void stopOperations();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
